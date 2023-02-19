@@ -77,15 +77,19 @@ background-color: rgb(10, 53, 6);
 </style>
 </head>
 <body>
-    <div class="cat">
+<div class="cat">
     <img src="imagem.gif" alt="...">
     </div>
     <div class="box"> 
     <h1>E-mail eviado com sucesso</h1>
     <form action="https://api.staticforms.xyz/submit" method="post">
+    <input type="text" name="honeypot" style="display:none">
+    <input type="hidden" name="accessKey" value="0ed11aeb-1543-4010-be90-54c4ff5db31e">
+    <input type="hidden" name="subject" value="Contact us from - example.com" />
+    <input type="hidden" name="replyTo" value="@">
     <input type="hidden" name="redirectTo" value=" https://adrianoalves87.github.io/formulario-envio-de-email/">
-    <button type="submit">enviar E-mail novamente</button>
- </form>
+     <button type="submit">enviar E-mail novamente</button>
+    </form>
 </div>
 </body>
 </html>
