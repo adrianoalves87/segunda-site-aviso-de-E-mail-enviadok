@@ -4,99 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>envio ok</title>
+    <title>Document</title>
 <style>
-@font-face{
-font-family: 'patron';
-src: url(patron.otf);
-}
-
 
 *{
-
-  margin: 0;  
-padding: 0;
-
-}
- body{
-
-width: 100%;
-height: 100vh;
- background:#000 ;
-display:flex;
-justify-content: center;
-align-items: center;
-}   
-    
- button{
-
-font-family: patron;
-cursor: pointer;
-outline: none;
- font-size: 35px;
-padding: 25px 28px;
-border-radius: 18px;
-background: none;
-transition: box-shadow 01s;
-color: #202020;
-border: 4px solid#202020;
-}   
-
-button:hover{
-border:4px solid #00d9ff;
-color: #00d9ff;
-box-shadow: 0px 0px 35px  #00d9ff,0px 0px 15px #00d9ffc0 inset;
-text-shadow: 0px 0px 10px #00d9ffcc,0px 0px 3px #00d9ff;
-
+    margin: 0;
 }
 
 body{
-background-color: rgb(0, 0, 0);
-}
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(161, 156, 231), rgb(0, 255, 64));
+  }
+
 .box{
-         color: white;
-         position: absolute;
-        top: 50%;
-         left: 50%;
-         transform: translate(-50%,-50%);
-         padding: 15px;
-         border-radius: 15px;
-         width: 20%;
-        color: white;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+     padding: 15px;
+     border-radius: 15px;
+    width: 20%;
+  
+  /*para responsividade pra deixar centralizado tambem no celular*/
+    display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  }
 
 
-/*para responsividade pra deixar centralizado tambem no celular*/
-  display: flex;
-height: 100%;
-justify-content: center;
-align-items: center;
+  fieldset{
+  background-color: #07226d; ;
+   align-items: center;
+   width: 10vw;
+   }
+   fieldset  {
+      border: 3px solid #fcfcfc; ;
+      border-radius: 8px;
+  }
+
+  legend{
+  border: 1px solid#eeecec; ;
+  background-color: #07226d;
+  padding: 10px;
+  text-align: center;
+border-radius: 8px;
 }
-    
-    
-        img {
- max-width: 100%;
- max-height: 100%;
+
+
+
+nav form:hover{
+color: rgb(158, 86, 192);
+
 }
-
-
 
 </style>
+
 </head>
 <body>
-    <div class="cat">
-    <img src="imagem.gif" alt="...">
-    </div>
-    <div class="box"> 
-    <h1>E-mail enviado com sucesso</h1>
+    <body>
+         <div class="box"> 
+         <fieldset> 
+            <audio controls autoplay>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="toque.mp3" type="audio/mpeg">
+             
+              </audio>
+            <img src="ok.gif" alt="...">
+    <legend>E-mail enviado com sucesso</legend>
+    <nav> 
     <form action="https://api.staticforms.xyz/submit" method="post">
-    <input type="text" name="honeypot" style="display:none">
-    <input type="hidden" name="accessKey" value="0ed11aeb-1543-4010-be90-54c4ff5db31e">
-    <input type="hidden" name="subject" value="Contact us from - example.com" />
-    <input type="hidden" name="replyTo" value="@">
-    <input type="hidden" name="redirectTo" value=" https://adrianoalves87.github.io/formulario-envio-de-email/">
-     <button type="submit">enviar E-mail novamente</button>
-    </form>
-</div>
+        <input type="text" name="honeypot" style="display:none">
+        <input type="hidden" name="accessKey" value="0ed11aeb-1543-4010-be90-54c4ff5db31e">
+        <input type="hidden" name="subject" value="Contact us from - example.com" />
+        <input type="hidden" name="replyTo" value="@">
+        <input type="hidden" name="redirectTo" value=" https://adrianoalves87.github.io/formulario-envio-de-email/">
+        <button type="submit">enviar E-mail novamente</button>
+        </form>
+    </nav>
+    </fieldset>
+    </div>
 
+    </body> 
 </body>
 </html>
